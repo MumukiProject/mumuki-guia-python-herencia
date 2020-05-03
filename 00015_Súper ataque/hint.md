@@ -1,0 +1,1 @@
+Recordá que, a pesar de que las subclases realizan la acción `beber!` de forma distinta, _queremos_ explicitar en la clase abstracta `Persona` que **deben** implementar ese método.

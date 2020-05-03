@@ -1,0 +1,17 @@
+---
+expectations:
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: Sobreviviente
+  inspection: Inherits:Persona
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: Aliado
+  inspection: Inherits:Persona
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: Persona
+  inspection: DeclaresMethod:atacar!
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: Sobreviviente
+  inspection: Not:DeclaresMethod:energia
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: Aliado
+  inspection: Not:DeclaresMethod:energia

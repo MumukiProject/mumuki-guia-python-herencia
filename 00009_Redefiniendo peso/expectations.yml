@@ -1,0 +1,8 @@
+---
+expectations:
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: peso
+  inspection: Uses:cantidad_de_ruedas
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: Bicicleta
+  inspection: Inherits:MedioDeTransporte

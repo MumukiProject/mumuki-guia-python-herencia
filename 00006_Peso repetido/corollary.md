@@ -1,0 +1,1 @@
+¿No es _casi magia_? A pesar de que `Moto` y `Auto` no tienen definido un método `peso`, siguen entendiendo el mensaje porque lo heredan de su superclase `MedioDeTransporte`. ¡Fantástico! :heart_eyes: 

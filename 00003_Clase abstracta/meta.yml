@@ -1,0 +1,29 @@
+---
+locale: es
+tags: []
+layout: input_bottom
+editor: multiple_choice
+type: problem
+extra_visible: false
+language: text
+manual_evaluation: false
+choices:
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  value: "`MedioDeTransporte` es una clase abstracta."
+  checked: true
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  value: "`Mascota` es una clase concreta."
+  checked: false
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  value: Las clases abstractas no se instancian.
+  checked: true
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  value: "`Mascota` hereda de `Gato`."
+  checked: false
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  value: "`Moto` hereda de `MedioDeTransporte`."
+  checked: true
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  value: Un método abstracto no tiene comportamiento.
+  checked: true
+name: Clase abstracta

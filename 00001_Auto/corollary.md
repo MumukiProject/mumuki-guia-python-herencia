@@ -1,0 +1,3 @@
+:notes: _Vamos de paseo, en un auto feo..._ :notes: 
+
+¡Ya tenemos el primero de nuestros medios de transporte! Ahora, pasemos a algo con la mitad de ruedas...

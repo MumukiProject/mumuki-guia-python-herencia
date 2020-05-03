@@ -1,0 +1,3 @@
+:warning: Prestá atención: lo que hicimos aquí es _parecido_ a la herencia de los transportes, pero no igual. En nuestro ejemplo anterior, `MedioDeTransporte` es una clase abstracta, porque nunca la vamos a instanciar, y nuestros tres transportes heredan de ella.
+
+Aquí, sin embargo, `Zombi` no es abstracta sino concreta - y `SuperZombi` hereda de ella sin problemas. ¡Esto significa que en nuestro sistema podemos tener tanto objetos `SuperZombi` como `Zombi`! En este caso, y al igual que con los transportes, las instancias de `SuperZombi` entenderán todos los mensajes que estén definidos en su clase, sumados a todos los que defina `Zombi`.

@@ -1,0 +1,1 @@
+Todo muy lindo, tenemos cosas que pesan, pero... ¡estamos repitiendo lógica! El cálculo de `peso` está dos veces, una en `Auto` y otra en `Moto`. ¡Solucionemos eso!

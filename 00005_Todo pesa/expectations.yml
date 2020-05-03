@@ -1,0 +1,11 @@
+---
+expectations:
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: Auto
+  inspection: Inherits:MedioDeTransporte
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: Moto
+  inspection: Inherits:MedioDeTransporte
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: peso
+  inspection: Uses:cantidad_de_ruedas
