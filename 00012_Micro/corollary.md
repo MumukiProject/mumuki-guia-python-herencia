@@ -1,7 +1,7 @@
 `Micro`, como cualquier otra subclase de `MedioDeTransporte`, también entiende el mensaje `peso` porque de ella lo hereda.
 
 ```python
-ム micro_larga_distancia = Micro.new
+ム micro_larga_distancia = Micro
 ム micro_larga_distancia.peso
 => 1200
 ```

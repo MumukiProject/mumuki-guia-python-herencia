@@ -1,55 +1,55 @@
-class Zombi
-  def initialize(salud_inicial)
-    @salud = salud_inicial
-  end
-  
-  def salud
-    @salud
-  end
-  
-  def gritar
+class Zombi:
+  def __init__(self, self, salud_inicial):
+    self.salud = salud_inicial
+
+
+  def salu(self):
+    self.salud
+
+
+  def grita(self):
     "¡agrrrg!"
-  end
-  
-  def sabe_correr?
-    false
-  end
-  
-  def sin_vida?
-    @salud == 0
-  end
-  
-  def recibir_danio!(puntos)
-    @salud = [@salud - puntos * 2, 0].max
-  end
-end
 
-class SuperZombi
-  def initialize(salud_inicial)
-    @salud = salud_inicial
-  end
-
-  def salud
-    @salud
-  end
-
-  def gritar
-    "¡agrrrg!"
-  end
 
   def sabe_correr?
-    true
-  end
+    False
+
 
   def sin_vida?
-    @salud == 0
-  end
+    self.salud == 0
 
-  def recibir_danio!(puntos)
-    @salud = [@salud - puntos * 3, 0].max
-  end
-  
+
+  def recibir_danio!(self, puntos):
+    self.salud = [self.salud - puntos * 2, 0].max
+
+
+
+class SuperZombi:
+  def __init__(self, self, salud_inicial):
+    self.salud = salud_inicial
+
+
+  def salu(self):
+    self.salud
+
+
+  def grita(self):
+    "¡agrrrg!"
+
+
+  def sabe_correr?
+    True
+
+
+  def sin_vida?
+    self.salud == 0
+
+
+  def recibir_danio!(self, puntos):
+    self.salud = [self.salud - puntos * 3, 0].max
+
+
   def regenerarse!
-    @salud = 100
-  end
-end
+    self.salud = 100
+
+

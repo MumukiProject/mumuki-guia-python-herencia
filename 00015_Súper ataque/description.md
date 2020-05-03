@@ -1,42 +1,42 @@
 ¡Suficientes ruedas por hoy! Para terminar, volvamos un momento a la invasión zombi. Veamos parte del comportamiento de `Sobreviviente` y `Aliado`:
 
 ```python
-class Sobreviviente
-  def initialize
-    @energia = 1000
-  end
+class Sobreviviente:
+  def __init_(self):
+    self.energia = 1000
 
-  def energia
-    @energia
-  end
 
-  def beber!
-    @energia *= 1.25
-  end
+  def energi(self):
+    self.energia
 
-  def atacar!(zombi, danio)
-    zombi.recibir_danio!(danio)
-  end
-end
-
-class Aliado
-  def initialize
-    @energia = 500
-  end
-
-  def energia
-    @energia
-  end
 
   def beber!
-    @energia *= 1.10
-  end
+    self.energia *= 1.25
 
-  def atacar!(zombi, danio)
+
+  def atacar!(self, zombi, danio):
     zombi.recibir_danio!(danio)
-    @energia *= 0.95
-  end
-end
+
+
+
+class Aliado:
+  def __init_(self):
+    self.energia = 500
+
+
+  def energi(self):
+    self.energia
+
+
+  def beber!
+    self.energia *= 1.10
+
+
+  def atacar!(self, zombi, danio):
+    zombi.recibir_danio!(danio)
+    self.energia *= 0.95
+
+
 ```
 
 Como verás, tenemos distintos grados de similitud en el código:

@@ -1,29 +1,28 @@
-class Moto
-  def litros
-    @litros
-  end
-end
+class Moto:
+  def litro(self):
+    self.litros
 
-moto = Moto.new
 
-it "Una moto inicializa con 20 litros de combustible" do
+
+moto = Moto
+
+def test_"Una moto inicializa con 20 litros de combustible":
   expect(moto.litros).to eq 20
-end
 
-it "Una moto no es ligera al iniciar" do
-  expect(moto.ligero?).to be false
-end
 
-it "Una moto gasta 0.1 litros por cada kilómetro que se la conduce" do
+def test_"Una moto no es ligera al iniciar":
+  expect(moto.ligero?).to be False
+
+
+def test_"Una moto gasta 0.1 litros por cada kilómetro que se la conduce":
   moto.conducir!(150)
   expect(moto.litros).to eq (20 - (0.1 * 150))
-end
 
-it "Una moto es ligera después de conducirla muchos kilómetros" do
+
+def test_"Una moto es ligera después de conducirla muchos kilómetros":
   moto.ligero?
-  expect(moto.ligero?).to be true
-end
+  expect(moto.ligero?).to be True
 
-it "Una moto tiene cuatro ruedas" do
+
+def test_"Una moto tiene cuatro ruedas":
   expect(moto.cantidad_de_ruedas).to eq 2
-end

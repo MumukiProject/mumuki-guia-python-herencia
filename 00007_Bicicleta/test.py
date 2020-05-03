@@ -1,31 +1,30 @@
-class Bicicleta
-  def kilometros_recorridos
-    @kilometros_recorridos
-  end
-end
+class Bicicleta:
+  def kilometros_recorrido(self):
+    self.kilometros_recorridos
 
-bici = Bicicleta.new
 
-it "Una bicicleta inicializa con 0 kilómetros recorridos" do
+
+bici = Bicicleta
+
+def test_"Una bicicleta inicializa con 0 kilómetros recorridos":
   expect(bici.kilometros_recorridos).to eq 0
-end
 
-it "Una bicicleta tiene dos ruedas" do
+
+def test_"Una bicicleta tiene dos ruedas":
   expect(bici.cantidad_de_ruedas).to eq 2
-end
 
-it "Una bicicleta es ligera" do
-  expect(bici.ligero?).to be true
-end
 
-it "Una bicicleta que se conduce 20 kilómetros y luego 3 kilómetros tiene 23 kilómetros recorridos" do
+def test_"Una bicicleta es ligera":
+  expect(bici.ligero?).to be True
+
+
+def test_"Una bicicleta que se conduce 20 kilómetros y luego 3 kilómetros tiene 23 kilómetros recorridos":
   bici.conducir!(20)
   expect(bici.kilometros_recorridos).to eq 20
   bici.conducir!(3)
   expect(bici.kilometros_recorridos).to eq 23
-end
 
-it "Una bicicleta sigue siendo ligera después de conducirla muchos kilómetros" do
+
+def test_"Una bicicleta sigue siendo ligera después de conducirla muchos kilómetros":
   bici.ligero?
-  expect(bici.ligero?).to be true
-end
+  expect(bici.ligero?).to be True

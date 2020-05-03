@@ -1,1 +1,1 @@
-No nos vamos a preocupar aún en que haya suficientes `@litros` de combustible para poder conducir una cantidad de kilómetros. ¡Más adelante vamos a tener herramientas para evitar que alguien conduzca con el tanque vacío! :wink: 
+No nos vamos a preocupar aún en que haya suficientes `self.litros` de combustible para poder conducir una cantidad de kilómetros. ¡Más adelante vamos a tener herramientas para evitar que alguien conduzca con el tanque vacío! :wink:

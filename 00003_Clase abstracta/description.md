@@ -9,22 +9,22 @@ En el ejemplo con animales ocurre parecido: si definimos implementaciones espec�
 A esas clases, como `MedioDeTransporte` o `Ave`, se las llama **clases abstractas** porque, a diferencia de las **clases concretas** (como `Moto` o `Auto`), nunca las instanciamos, en criollo, no creamos objetos con esa clase. Sirven para especificar qué métodos deben implementar aquellas clases que estén más _abajo_ en la jerarquía.
 
 ```python
-class Ave
+class Ave:
   def volar!
-  end
-end
 
-class Condor < Ave
-  def volar!
-    @energia -= 20
-  end
-end
 
-class Halcon < Ave
+
+class Condor < Ave:
   def volar!
-    @energia -= 35
-  end
-end
+    self.energia -= 20
+
+
+
+class Halcon < Ave:
+  def volar!
+    self.energia -= 35
+
+
 ```
 
 El símbolo `<` significa "hereda de": por ejemplo, `Cóndor` hereda de `Ave`, que está _más arriba_ en la jerarquía. En la clase abstracta `Ave`, el método `volar!` **no tiene comportamiento** porque el comportamiento lo implementan las clases concretas `Halcón` y `Cóndor`. Entonces, decimos que `volar!` es un **método abstracto**.
