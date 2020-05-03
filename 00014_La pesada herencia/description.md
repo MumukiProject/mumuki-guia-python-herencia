@@ -4,7 +4,7 @@ Y eso nos pone en un problema interesante: de la forma actual, el peso está mal
 
 ¡Sí! El mensaje `super`. Al utilizar `super` en el método de una subclase, **se evalúa el método con el mismo nombre de su superclase**. Por ejemplo...
 
-```ruby
+```python
 class Saludo
   def saludar
     "Buen día"
@@ -18,9 +18,9 @@ class SaludoFormal < Saludo
 end
 ```
 
-De esta forma, al enviar el mensaje `saludar` a `SaludoFormal`, `super` **invoca** el método `saludar` de su superclase, `Saludo`. :wave: 
+De esta forma, al enviar el mensaje `saludar` a `SaludoFormal`, `super` **invoca** el método `saludar` de su superclase, `Saludo`. :wave:
 
-```ruby
+```python
 ム mi_saludo = SaludoFormal.new
 ム mi_saludo.saludar
 => "Buen día señoras y señores"

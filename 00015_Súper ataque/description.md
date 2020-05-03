@@ -1,6 +1,6 @@
 ¡Suficientes ruedas por hoy! Para terminar, volvamos un momento a la invasión zombi. Veamos parte del comportamiento de `Sobreviviente` y `Aliado`:
 
-```ruby
+```python
 class Sobreviviente
   def initialize
     @energia = 1000
@@ -9,7 +9,7 @@ class Sobreviviente
   def energia
     @energia
   end
-  
+
   def beber!
     @energia *= 1.25
   end
